@@ -2,20 +2,20 @@
 region: "us-east-1"
 org_name: "rtcek"
 app_name: "sso"
-aws_vpc_id: "vpc-060f02b7488c8743e"
+aws_vpc_id: "vpc-035d238901a99b5ad"
 aws_subnet: ["subnet-0cb38996848fd445f", "subnet-03b603c553367164c", "subnet-0ccdcb1b28b0b0505", "subnet-07d777b42f84d0549", "subnet-0e26e9bee5ad56648"]
 
 # lambda
-aws_lambda_role_arn: "arn:aws:iam::637423277544:role/rtctek-app_name-dev-lambdafunctionrole04"
+#aws_lambda_role_arn: "arn:aws:iam::637423277544:role/rtctek-app_name-dev-lambdafunctionrole04"
         
 # Tags
-aws-migration-project-id: "MPE42366"
-division: "st"
-department: "a86065"
-technicalContact: "SSO-SUPPORT@acs.org"
-map_migrated_tag: "mig42366"
-aws_vpc_endpoint_service_name: "com.amazonaws.us-east-1.elasticfilesystem"
-service_name: "global"
+#aws-migration-project-id: "MPE42366"
+#division: "st"
+#department: "a86065"
+#technicalContact: "SSO-SUPPORT@acs.org"
+#map_migrated_tag: "mig42366"
+#aws_vpc_endpoint_service_name: "com.amazonaws.us-east-1.elasticfilesystem"
+#service_name: "global"
 
 # Security Group variables
 aws_sg_configuration:
