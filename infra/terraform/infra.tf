@@ -51,30 +51,3 @@ module "ecr" {
   default_tags     = local.default_tags
   map_migrated_tag = lookup(local.configs, "map_migrated_tag")
 }
-
-#
-# # Module for aws_efs
-# module "efs" {
-#   source                      = "./modules/efs"
-#   env                         = terraform.workspace
-#   default_tags                = local.default_tags
-#   org_name                    = lookup(local.configs, "org_name")
-#   app_name                    = lookup(local.configs, "app_name")
-#   aws_vpc_efs_subnets         = lookup(local.configs, "aws_subnet")
-#   map_migrated_tag            = lookup(local.configs, "map_migrated_tag")
-#   efs_mount_security_group_id = module.security_group.aws_sg_id["efs"]
-# }
-#
-# # Module for VPC Endpoint
-# module "vpc_endpoint" {
-#   org_name                      = lookup(local.configs, "org_name")
-#   app_name                      = lookup(local.configs, "app_name")
-#   source                        = "./modules/vpn-endpoint"
-#   aws_vpc_endpoint_sg_ids       = [module.security_group.aws_sg_id["efs"], module.security_group.aws_sg_id["sg-comman"]]
-#   aws_vpc_endpoint_subnet       = lookup(local.configs, "aws_subnet")
-#   aws_vpc_endpoint_service_name = lookup(local.configs, "aws_vpc_endpoint_service_name")
-#   aws_vpc_id                    = lookup(local.configs, "aws_vpc_id")
-#   default_tags                  = local.default_tags
-#   env                           = terraform.workspace
-#   map_migrated_tag              = lookup(local.configs, "map_migrated_tag")
-# }
