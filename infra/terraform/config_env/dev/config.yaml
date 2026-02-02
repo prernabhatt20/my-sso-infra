@@ -5,6 +5,7 @@ app_name: "sso"
 aws_vpc_id: "vpc-035d238901a99b5ad"
 aws_subnet: ["subnet-0cb38996848fd445f", "subnet-03b603c553367164c", "subnet-0ccdcb1b28b0b0505", "subnet-07d777b42f84d0549", "subnet-0e26e9bee5ad56648"]
 
+
 # lambda
 #aws_lambda_role_arn: "arn:aws:iam::637423277544:role/rtctek-app_name-dev-lambdafunctionrole04"
         
